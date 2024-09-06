@@ -1,0 +1,134 @@
+/* General body styling for background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure body height covers full viewport */
+    display: flex;
+    flex-direction: column; /* For proper footer positioning */
+    justify-content: center;
+    align-items: center;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSFb0b4D0QjeeepuAa1nmcksjmNSC0dfRijA&s') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Ensure main content takes up full available space */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login and Sign-up container styling */
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    width: 350px;
+    text-align: center;
+    margin: 15px;
+}
+
+/* Form styling */
+form input[type="text"],
+form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit button styling */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* To-Do Container */
+#todoContainer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 400px;
+}
+
+#todoContainer h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* Task input and buttons */
+#taskInput {
+    width: 85%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+#todoContainer button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+#todoContainer button:hover {
+    background-color: #45a049;
+}
+
+/* Task list */
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+/* Task hover effect */
+#taskList li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    font-size: 14px;
+}
